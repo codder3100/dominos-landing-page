@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domino's Pizza</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Adding Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Navigation Bar -->
+    <div id="nav">
+        <!-- Logo and Brand -->
+        <div class="brand-container">
+            <i class="fas fa-pizza-slice logo-icon"></i>
+            <div class="brand-name">Domino's Pizza</div>
+        </div>
+        
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="menu.html"><i class="fas fa-utensils"></i> MENU</a></li>
+            <li><a href="deals.html"><i class="fas fa-tags"></i> DEALS</a></li>
+            <li><a href="locations.html"><i class="fas fa-map-marker-alt"></i> LOCATIONS</a></li>
+            <li><a href="tracker.html"><i class="fas fa-truck"></i> TRACK ORDER</a></li>
+        </ul>
+        
+        <div class="search-container">
+            <div class="search-box-wrapper">
+                <i class="fas fa-search"></i>
+                <input type="text" id="search-box" placeholder="Search menu...">
+            </div>
+            
+            <div class="nav-icons">
+                <a href="profile.html" class="nav-icon">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </a>
+                <a href="cart.html" class="nav-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Cart</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Banner -->
+    <div class="hero-banner">
+        <img src="images/b1.png" alt="Delicious Pizza Banner">
+        <div class="hero-overlay">
+            <h1>Delicious Pizza Delivered Fast</h1>
+            <p>Order now and get special offers!</p>
+            <button class="hero-button">ORDER ONLINE</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Special Offers Section -->
+        <div class="deals-section">
+            <h2 class="section-title">TODAY'S SPECIAL OFFERS</h2>
+            <div class="pizza-grid">
+                <div class="grid-item">
+                    <div class="item-badge">BESTSELLER</div>
+                    <img src="images/image1.png" alt="Family Deal">
+                    <h3>Family Feast</h3>
+                    <p>2 Large Pizzas, Garlic Bread & 1.5L Drink</p>
+                    <div class="price">Rs.348</div>
+                    <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> ORDER NOW</button>
+                </div>
+                
+                <div class="grid-item">
+                    <div class="item-badge">NEW</div>
+                    <img src="images/image2.png" alt="Value Deal">
+                    <h3>Value Combo</h3>
+                    <p>Medium Pizza, Wings & Garlic Bread</p>
+                    <div class="price">Rs.399</div>
+                    <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> ORDER NOW</button>
+                </div>
+                
+                <div class="grid-item">
+                    <div class="item-badge">WEEKEND</div>
+                    <img src="images/image3.png" alt="Weekend Special">
+                    <h3>Weekend Special</h3>
+                    <p>Buy One Large Pizza, Get One Free</p>
+                    <div class="price">Rs.750</div>
+                    <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> ORDER NOW</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Best Sellers Section -->
+        <div class="deals-section">
+            <h2 class="section-title">BEST SELLERS</h2>
+            <div class="pizza-grid">
+                <div class="grid-item">
+                    <div class="rating"><i class="fas fa-star"></i> 4.9</div>
+                    <img src="images/extra cheese.png" alt="Pepperoni Pizza">
+                    <h3>Pepperoni Feast</h3>
+                    <p>Double pepperoni, extra cheese</p>
+                    <div class="price">Rs.429</div>
+                    <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> ADD TO CART</button>
+                </div>
+                
+                <div class="grid-item">
+                    <div class="rating"><i class="fas fa-star"></i> 4.8</div>
+                    <img src="images/bell.png" alt="Supreme Pizza">
+                    <h3>Supreme</h3>
+                    <p>Pepperoni, sausage, bell peppers, onions & olives</p>
+                    <div class="price">Rs.410</div>
+                    <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> ADD TO CART</button>
+                </div>
+                
+                <div class="grid-item">
+                    <div class="rating"><i class="fas fa-star"></i> 4.7</div>
+                    <img src="images/bbq.png" alt="BBQ Chicken Pizza">
+                    <h3>BBQ Chicken</h3>
+                    <p>Grilled chicken, BBQ sauce, onions & cheese</p>
+                    <div class="price">Rs.449</div>
+                    <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> ADD TO CART</button>
+                </div>
+                
+                <div class="grid-item">
+                    <div class="rating"><i class="fas fa-star"></i> 4.6</div>
+                    <img src="images/vegiee.png" alt="Veggie Pizza">
+                    <h3>Veggie Supreme</h3>
+                    <p>Bell peppers, mushrooms, onions, olives & tomatoes</p>
+                    <div class="price">Rs.299</div>
+                    <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> ADD TO CART</button>
+                </div>
+                
+                <div class="grid-item">
+                    <div class="rating"><i class="fas fa-star"></i> 4.8</div>
+                    <img src="images/meet.png" alt="Meat Lovers Pizza">
+                    <h3>Meat Lovers</h3>
+                    <p>Pepperoni, ham, bacon, sausage & beef</p>
+                    <div class="price">Rs.569</div>
+                    <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> ADD TO CART</button>
+                </div>
+                
+                <div class="grid-item">
+                    <div class="rating"><i class="fas fa-star"></i> 4.5</div>
+                    <img src="images/pineapple.png" alt="Hawaiian Pizza">
+                    <h3>Hawaiian</h3>
+                    <p>Ham, pineapple & extra cheese</p>
+                    <div class="price">Rs.348</div>
+                    <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Shop By Category Section -->
+        <div class="category-section">
+            <h2 class="section-title">SHOP BY CATEGORY</h2>
+            <div class="category-grid">
+                <a href="/pizzas">
+                    <div class="category-card">
+                        <img src="images/p1.png" alt="Pizzas">
+                        <div class="category-text">
+                            <i class="fas fa-pizza-slice"></i>
+                            <h3>Pizzas</h3>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="/sides">
+                    <div class="category-card">
+                        <img src="images/sides.png" alt="Sides">
+                        <div class="category-text">
+                            <i class="fas fa-drumstick-bite"></i>
+                            <h3>Sides</h3>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="/drinks">
+                    <div class="category-card">
+                        <img src="images/drinks.png" alt="Drinks">
+                        <div class="category-text">
+                            <i class="fas fa-glass-whiskey"></i>
+                            <h3>Drinks</h3>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="/desserts">
+                    <div class="category-card">
+                        <img src="images/dessert.png" alt="Desserts">
+                        <div class="category-text">
+                            <i class="fas fa-ice-cream"></i>
+                            <h3>Desserts</h3>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="/deals">
+                    <div class="category-card">
+                        <img src="images/deals.png" alt="Deals">
+                        <div class="category-text">
+                            <i class="fas fa-percent"></i>
+                            <h3>Deals</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Promo Section -->
+        <div class="promo-section">
+            <div class="promo-content">
+                <i class="fas fa-mobile-alt promo-icon"></i>
+                <h2>DOWNLOAD OUR APP & GET 50% OFF YOUR FIRST ORDER</h2>
+                <p>Enjoy exclusive deals, easy ordering, and track your delivery in real-time!</p>
+                <button class="promo-button"><i class="fas fa-download"></i> DOWNLOAD NOW</button>
+            </div>
+        </div>
+        
+        <!-- App Download Section -->
+        <div class="app-section">
+            <div class="app-image">
+                <img src="images/app.png" alt="Domino's App">
+            </div>
+            <div class="app-content">
+                <h2><i class="fas fa-mobile-alt"></i> Order From Our App</h2>
+                <div class="app-features">
+                    <div class="feature">
+                        <i class="fas fa-bolt"></i>
+                        <p>Fast ordering with just a few taps</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-tag"></i>
+                        <p>Exclusive app-only deals</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Real-time delivery tracking</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-heart"></i>
+                        <p>Save your favorite orders</p>
+                    </div>
+                </div>
+                <div class="app-buttons">
+                    <a href="#" class="app-store-button">
+                        <i class="fab fa-apple"></i>
+                        <div>
+                            <span>Download on the</span>
+                            <strong>App Store</strong>
+                        </div>
+                    </a>
+                    <a href="#" class="app-store-button">
+                        <i class="fab fa-google-play"></i>
+                        <div>
+                            <span>GET IT ON</span>
+                            <strong>Google Play</strong>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3><i class="fas fa-info-circle"></i> ABOUT US</h3>
+                <ul>
+                    <li><a href="/about"><i class="fas fa-angle-right"></i> Our Story</a></li>
+                    <li><a href="/careers"><i class="fas fa-angle-right"></i> Careers</a></li>
+                    <li><a href="/franchising"><i class="fas fa-angle-right"></i> Franchising</a></li>
+                    <li><a href="/news"><i class="fas fa-angle-right"></i> News</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3><i class="fas fa-headset"></i> CUSTOMER SERVICE</h3>
+                <ul>
+                    <li><a href="/faq"><i class="fas fa-angle-right"></i> FAQ</a></li>
+                    <li><a href="/contact"><i class="fas fa-angle-right"></i> Contact Us</a></li>
+                    <li><a href="/feedback"><i class="fas fa-angle-right"></i> Feedback</a></li>
+                    <li><a href="/store-finder"><i class="fas fa-angle-right"></i> Store Finder</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3><i class="fas fa-utensils"></i> OUR MENU</h3>
+                <ul>
+                    <li><a href="/pizzas"><i class="fas fa-angle-right"></i> Pizzas</a></li>
+                    <li><a href="/sides"><i class="fas fa-angle-right"></i> Sides</a></li>
+                    <li><a href="/drinks"><i class="fas fa-angle-right"></i> Drinks</a></li>
+                    <li><a href="/desserts"><i class="fas fa-angle-right"></i> Desserts</a></li>
+                    <li><a href="/nutrition"><i class="fas fa-angle-right"></i> Nutritional Info</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3><i class="fas fa-share-alt"></i> CONNECT WITH US</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <h3 style="margin-top: 20px;"><i class="fas fa-mobile-alt"></i> GET OUR APP</h3>
+                <div class="app-buttons footer-app-buttons">
+                    <a href="#" class="app-store-button small">
+                        <i class="fab fa-apple"></i>
+                        <span>App Store</span>
+                    </a>
+                    <a href="#" class="app-store-button small">
+                        <i class="fab fa-google-play"></i>
+                        <span>Google Play</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Domino's Pizza. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a> | <a href="#">Accessibility</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Added a fixed bottom order button for mobile users -->
+    <div class="mobile-order-button">
+        <button><i class="fas fa-shopping-cart"></i> ORDER NOW</button>
+    </div>
+</body>
+</html>
